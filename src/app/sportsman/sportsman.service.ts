@@ -3,9 +3,10 @@ import { Observable } from 'rxjs/Observable';
 
 import { Sportsman } from './sportsman';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
-const API_URL = "../../assets/";
-const authors = '/sportspeople.json';
+const API_URL = environment.apiURL;
+const authors = '/sportspeople';
 
 /**
  * The service provider for everything related to authors
