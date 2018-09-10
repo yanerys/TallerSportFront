@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-md-2" *ngFor = "let sport of sports">
+           <figure class="figure"> 
+              <div class="img-thumbnail border-0">                        
+                  <img class="img-fluid" src='{{sport.image}}' alt="{{sport.name}}" />                                     
+              </div>
+              <figcaption class="figure-caption text-center">{{sport.name}}</figcaption>
+          </figure>
+      </div>
+  </div>
+</div>
